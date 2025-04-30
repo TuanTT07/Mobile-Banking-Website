@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+/* common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+.btn {
+    --height: 58px;
+
+    display: inline-block;
+    padding: 0 28px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 8px;
+    background: #212832;
+
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+/* ===== Header ===== */
+.header {
+    padding-bottom: 8px;
+    padding-top: 42px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__left {
+    display: flex;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+.header-logo__text {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+.navbar {
+    margin-left: 70px;
+}
+
+.navbar__list {
+    display: flex;
+}
+.navbar-item {
+    padding: 4px 24px;
+}
+.navbar-item__link {
+    position: relative;
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+.navbar-item__active .navbar-item__link {
+    color: #212832;
+    text-shadow: 0 0 0.5px currentColor;
+}
+.navbar-item:hover .navbar-item__link {
+    color: #212832;
+    text-shadow: 0 0 0.5px currentColor;
+}
+.navbar-item__active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 1px;
+    border-radius: 0.05rem;
+    background: #7264d6;
+}
+.header-btn__login {
+    padding: 4px 28px;
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
