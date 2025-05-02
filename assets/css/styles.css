@@ -17,6 +17,11 @@ button {
     outline: none;
     border: transparent;
 }
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
 /* common */
 .container {
     width: 1170px;
