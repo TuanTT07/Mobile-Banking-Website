@@ -46,6 +46,12 @@ button {
 .btn:hover {
     opacity: 0.8;
 }
+.section-heading {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+}
 .section_desc {
     color: #696d76;
     font-size: 1.8rem;
@@ -120,6 +126,7 @@ button {
 /* ===== Hero ===== */
 .hero {
     padding-top: 68px;
+    padding-bottom: 80px;
 }
 .hero__inner {
     display: flex;
@@ -130,14 +137,14 @@ button {
     margin-right: 160px;
 }
 
-.hero__label {
+.section-label {
     display: inline-flex;
     align-items: center;
     color: #696d77;
     font-weight: 400;
     line-height: 1.75; /* 175% */
 }
-.hero__label::before {
+.section-label::before {
     margin-right: 12px;
     content: "";
     width: 18px;
@@ -203,6 +210,7 @@ button {
     width: 296px;
     height: 562px;
     object-fit: cover;
+    display: block;
 }
 .media-deposite {
     display: flex;
@@ -290,4 +298,121 @@ button {
     color: #fff;
     font-size: 0.8rem;
     line-height: 1; /* 100% */
+}
+
+/* ===== How to work =====*/
+.guide {
+    padding: 80px 0;
+}
+.guide__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.guide-media {
+    position: relative;
+    width: 456px;
+    height: 619px;
+}
+
+.guide-media::before {
+    position: absolute;
+    content: url(../img/background-img.svg);
+    display: inline-block;
+    width: 470px;
+    height: 550px;
+    bottom: -4px;
+    left: -7px;
+    z-index: 0;
+}
+
+.guide-media__thumb {
+    position: relative;
+    width: 456px;
+    height: 619px;
+    object-fit: cover;
+    z-index: 1;
+}
+.media--icon-card {
+    position: absolute;
+    top: 76px;
+    right: 55px;
+}
+
+.guide-congratulations {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    bottom: 96px;
+    right: -100px;
+    column-gap: 10px;
+    padding: 15px;
+    width: 226px;
+    height: 70px;
+    z-index: 1;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+.guide-congratulations__icon,
+.guide-congratulations__icon-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-congratulations__icon {
+    width: 40px;
+    height: 40px;
+    background: #4ab5e3;
+    border-radius: 4px;
+}
+
+.guide-congratulations__icon-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 2rem;
+    background: #fff;
+}
+
+.guide-congratulations__heading {
+    color: #212832;
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.guide-congratulations__desc {
+    margin-top: 5px;
+    color: #696d76;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.guide-info {
+    margin-left: 130px;
+}
+.guide-info__heading {
+    margin-top: 12px;
+}
+
+.guide-info__list {
+    margin-top: 70px;
+}
+.guide-item {
+    max-width: 470px;
+}
+
+.guide-item__heading {
+    margin-top: 30px;
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45; /* 145.455% */
+}
+.guide-item__desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
 }

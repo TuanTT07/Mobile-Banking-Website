@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
@@ -33,6 +37,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -73,14 +80,14 @@
             </div>
         </div>
     </header>
-    <main>
+    <main style="height: 10000px;">
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
                     <!-- hero info -->
                     <div class="hero__info">
                         <section class="hero-info__inner">
-                            <p class="hero__label">Digital Smart Wallet</p>
+                            <p class="section-label">Digital Smart Wallet</p>
                             <h1 class="hero__heading">Digital <strong>Payment</strong> For Everyone.</h1>
                             <p class="section_desc hero__desc">We bring together eveything that’s required to build websites and apps that accept payments and send payouts globally. We are the best platform.</p>
                             <form action="" class="hero-form">
@@ -94,16 +101,16 @@
                     <!-- Hero media -->
                     <figure class="hero__media">
                         <img src="./assets/img/mobile_hero.png" alt="" class="hero-media__thumb">
-                        <div class="media-deposite">
+                        <div class="media-deposite" data-aos="fade-right">
                             <img src="./assets/icon/download_deposite.svg" alt="" class="media-deposite__icon">
                             <p class="media-deposite__text">Deposite</p>
                             <p class="media-deposite__price">$32000</p>
                         </div>
-                        <div class="media-interest">
+                        <div class="media-interest" data-aos="fade-left">
                             <p class="media-interest__price">0%</p>
                             <p class="media-interest__text">Interest</p>
                         </div>
-                        <div class="media-security">
+                        <div class="media-security" data-aos="fade-up-left">
                             <img src="./assets/icon/security_icon.svg" alt="" class="media-security__icon">
                             <div class="security-info">
                                 <p class="media-security__price">$1.310</p>
@@ -114,7 +121,54 @@
                 </div>
             </div>
         </section>
+
+        <!-- How it work -->
+        <section class="guide">
+            <div class="container">
+                <div class="guide__inner">
+                    <figure class="guide-media">
+                        <img src="./assets/img/guide-img-1.png" alt="" class="guide-media__thumb">
+                        <div class="guide-media-card">
+                            <img src="./assets/img/card-guide.svg" alt="" class="media--icon-card">
+                        </div>
+                        <div class="guide-congratulations">
+                            <div class="guide-congratulations__icon">
+                                <div class="guide-congratulations__icon-check">
+                                    <img src="./assets/icon/check-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="guide-congratulations__info">
+                                <p class="guide-congratulations__heading">Congratulations</p>
+                                <p class="guide-congratulations__desc">Your account activated</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <section class="guide-info">
+                        <p class="section-label">Digital Smart Wallet</p>
+                        <h2 class="section-heading guide-info__heading">How It Works</h2>
+                        <ul class="guide-info__list">
+                            <li class="guide-item">
+                                <h3 class="guide-item__heading">1. Open a High Interest Checking account</h3>
+                                <p class="guide-item__desc">Fund your bank account with a minimum balance of $100. Enroll in 3 minutes or less!</p>
+                            </li>
+                            <li class="guide-item">
+                                <h3 class="guide-item__heading">2. 10 point-of-sale transactions each Month that are at least $10 each.</h3>
+                                <p class="guide-item__desc">Be sure to use your rewards checking account as often as possible in order to accue APYI</p>
+                            </li>
+                            <li class="guide-item">
+                                <h3 class="guide-item__heading">3. Receive up to 5.50% APY</h3>
+                                <p class="guide-item__desc">The APY you earn will be based on your account balance and satisfying the transaction requirement.</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
