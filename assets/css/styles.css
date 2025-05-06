@@ -52,7 +52,7 @@ button {
     font-weight: 700;
     line-height: 1.25; /* 125% */
 }
-.section_desc {
+.section-desc {
     color: #696d76;
     font-size: 1.8rem;
     font-weight: 400;
@@ -415,4 +415,203 @@ button {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75; /* 175% */
+}
+
+/* ===== Feature ===== */
+.feature {
+    padding: 80px 0;
+}
+.feature-media,
+.feature-info {
+    padding: 80px 0;
+}
+.feature-media {
+    position: relative;
+}
+.feature__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 130px;
+}
+.feature-info {
+    max-width: 470px;
+}
+.feature-info__heading {
+    margin-top: 12px;
+}
+.feature-info__desc {
+    margin-top: 20px;
+}
+
+.feature-list {
+    margin: 28px 0 38px;
+}
+.feature-item {
+    position: relative;
+    margin-top: 18px;
+}
+.feature-item__text {
+    margin-left: 24px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+.feature-item__text::before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.feature__btn {
+    min-width: 150px;
+}
+
+.feature-media__card {
+    position: relative;
+    width: 482px;
+    max-height: 322px;
+    padding: 38px;
+    border-radius: 2rem;
+    background: #8476e3;
+    overflow: hidden;
+    z-index: 1;
+}
+.feature-media__card::after {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    content: url(../icon/Mask\ Group.svg);
+    z-index: -1;
+}
+.feature-card__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-card__type {
+    color: #fff;
+    font-size: 2.4rem;
+}
+.feature-card__price {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.feature-card__row-bottom {
+    margin-top: 98px;
+    display: flex;
+    column-gap: 26px;
+}
+.card-left__text,
+.card-right__type {
+    color: #fff;
+    font-size: 2rem;
+}
+.card-left__day,
+.card-right__name {
+    margin-top: 4px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.card-right__name {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.feature-send {
+    display: flex;
+    position: absolute;
+    top: 38px;
+    right: -52px;
+    padding: 24px 12px;
+    width: 276px;
+    height: 86px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    z-index: 3;
+}
+.feature-send__img {
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.8rem;
+    background: rgba(218, 100, 100, 0.1);
+    box-shadow: -4px -2px 16px 0px #fff,
+        4px 2px 16px 0px rgba(136, 165, 191, 0.48);
+}
+.feature-send__heading {
+    color: #212832;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.feature-send__desc {
+    margin-top: 4px;
+    color: #696d76;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+.feature-send__noti {
+    margin-left: auto;
+}
+.feature-send__price {
+    color: #212832;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+}
+.feature-send__price,
+.feature-send__day {
+    text-align: right;
+}
+.feature-send__day {
+    margin-top: 4px;
+    color: #696d76;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+.feature-save {
+    width: 120px;
+    height: 120px;
+    padding: 14px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 16px;
+    background: #439f90;
+    z-index: 1;
+}
+.feature-save__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #fff;
+}
+.feature-save__text {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.feature-save__price {
+    margin-top: 6px;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.8rem;
+    font-weight: 600;
 }
