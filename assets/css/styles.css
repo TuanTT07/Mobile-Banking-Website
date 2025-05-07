@@ -678,3 +678,111 @@ button {
 .feature-info__bottom {
     margin-left: 100px;
 }
+/* ==== testimonial ===== */
+.testimonial {
+    padding: 80px;
+}
+.testimonial-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonial-heading {
+    margin: 12px 0 18px;
+}
+
+.testimonial-desc {
+    width: 435px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.testimonial-inner {
+    margin-top: 70px;
+}
+.testimonial-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+.testimonial-item__quote {
+    position: relative;
+    padding: 42px 28px;
+
+    color: #696d76;
+    font-family: "Open Sans";
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.54; /* 154.545% */
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    border: 1px solid #dfe2e8;
+}
+.testimonial-item__quote::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -53px;
+    background: #fff;
+    z-index: 0;
+    border: 1px solid #dfe2e8;
+    border-color: transparent #dfe2e8 #dfe2e8 transparent;
+    height: 60px;
+    width: 60px;
+    rotate: 45deg;
+}
+.testimonial-item__quote:hover,
+.testimonial-item__quote:hover::after {
+    background: #fff;
+    box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.07);
+    border-color: transparent;
+}
+.testimonial-item__fig {
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonial-item__avatar {
+    width: 104px;
+    height: 104px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonial-item__name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+.testimonial-item__role {
+    margin-top: 2px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.66; /* 166.667% */
+}
+.testimonial-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    margin-top: 38px;
+}
+.action-arrow {
+    width: 22px;
+    height: 6px;
+    border-radius: 0.1rem;
+    border: 1px solid #9b9fab;
+    cursor: pointer;
+}
+.action-active {
+    border-radius: 0.1rem;
+    border-color: transparent;
+    background: #7264d6;
+}
